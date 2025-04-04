@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações do Cachorro</title>
+</head>
+<body>
+    <h1>Informações do Cachorro</h1>
+    <p><strong>Nome:</strong> <span id="dogName"></span></p>
+    <p><strong>Dono:</strong> <span id="ownerFullName"></span></p>
+    <p><strong>Idade:</strong> <span id="dogAge"></span> anos</p>
+    <p><strong>Cor:</strong> <span id="dogColor"></span></p>
+    <p><strong>Porte:</strong> <span id="dogSize"></span></p>
+    <p><strong>Peso:</strong> <span id="dogWeight"></span> kg</p>
+    <p><strong>Temperamento:</strong> <span id="dogTemper"></span></p>
+    <p><strong>Telefone do Dono:</strong> <span id="ownerMobileNumber"></span></p>
+    <p><strong>Email do Dono:</strong> <span id="ownerMobileEmail"></span></p>
+    <p><strong>Endereço do Dono:</strong> <span id="ownerAdress"></span></p>
+
+    <script>
+        // Captura os parâmetros da URL e decodifica os valores
+        let params = new URLSearchParams(window.location.search);
+    
+        document.getElementById("dogName").textContent = decodeURIComponent(params.get("dogName"));
+        document.getElementById("ownerFullName").textContent = decodeURIComponent(params.get("ownerFullName"));
+        document.getElementById("dogAge").textContent = decodeURIComponent(params.get("dogAge"));
+        document.getElementById("dogColor").textContent = decodeURIComponent(params.get("dogColor"));
+        document.getElementById("dogSize").textContent = decodeURIComponent(params.get("dogSize"));
+        document.getElementById("dogWeight").textContent = decodeURIComponent(params.get("dogWeight"));
+        document.getElementById("dogTemper").textContent = decodeURIComponent(params.get("dogTemper"));
+        document.getElementById("ownerMobileNumber").textContent = decodeURIComponent(params.get("ownerMobileNumber"));
+        document.getElementById("ownerMobileEmail").textContent = decodeURIComponent(params.get("ownerMobileEmail"));
+        document.getElementById("ownerAdress").textContent = decodeURIComponent(params.get("ownerAdress"));
+    </script>
+</body>
+</html>
