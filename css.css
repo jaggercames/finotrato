@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'LittlePaws';
+    src: url('LittlePaws.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+  }
+body {
+    background-color: #e8ffe7;
+    opacity: 0.8;
+    background: radial-gradient(circle, transparent 20%, #e8ffe7 20%, #e8ffe7 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #e8ffe7 20%, #e8ffe7 80%, transparent 80%, transparent) 25px 25px, linear-gradient(#c7ffc4 2px, transparent 2px) 0 -1px, linear-gradient(90deg, #c7ffc4 2px, #e8ffe7 2px) -1px 0;
+    background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
+}
+
+.divHomePageInfo {
+    width: 50%;
+    margin: 90px auto; 
+    padding: 20px; 
+    background-color: #c6ffbb3f; 
+    border: 2px solid #99e974; 
+    border-radius: 10px; 
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); 
+    text-align: center; 
+    transition: transform 0.3s ease-in-out;
+}
+
+.divHomePageInfo:hover {
+    transform: scale(1.015);
+    transition: transform 0.3s ease-in-out;
+
+}
+
+/* Navbar fixa no topo e ocupando toda a largura */
+.topnav {
+    display: block;
+    background-color: #a7ffc0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex; /* Usa flexbox para alinhar os itens */
+    justify-content: center; /* Centraliza os links horizontalmente */
+    align-items: center; /* Alinha os links verticalmente */
+    padding: 10px 0; /* Adiciona um pequeno espaçamento vertical */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border: 2px solid #8ccc78;
+    height: 40px;
+    transition: height 0.4s ease-in-out;
+}
+
+.topnav:hover {
+    height: 65px;
+}
+
+.topnav a {
+    color: #000000;
+    text-align: center;
+    padding: 14px 20px; /* Aumenta o espaçamento */
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.topnav a:active {
+    background-color: #008a25 !important;
+    color: rgb(0, 161, 8) !important;
+}
+
+.topnav a:not(:last-child) {
+    margin-right: 20px;
+}
+
+/* Muda a cor dos links ao passar o mouse */
+.topnav a:hover {
+    background-color: #57e77e;
+    color: black;
+    border-radius: 20px;
+    transition: background-color 0.3s ease-in-out;
+}
